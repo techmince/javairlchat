@@ -1,4 +1,4 @@
-package com.jchat.server.response;
+package com.jchat.server.api.response;
 
 public class LoginResponse {
     String Token;

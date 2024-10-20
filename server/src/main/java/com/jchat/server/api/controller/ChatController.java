@@ -1,12 +1,12 @@
-package com.jchat.server.controller;
+package com.jchat.server.api.controller;
 
 
-import com.jchat.server.entity.Room;
-import com.jchat.server.request.ChangeRoomNameRequest;
-import com.jchat.server.request.CreateRoomRequest;
-import com.jchat.server.response.BaseResponse;
-import com.jchat.server.response.GetRoomsResponse;
-import com.jchat.server.service.ChatService;
+import com.jchat.server.db.entity.Room;
+import com.jchat.server.api.request.ChangeRoomNameRequest;
+import com.jchat.server.api.request.CreateRoomRequest;
+import com.jchat.server.api.response.BaseResponse;
+import com.jchat.server.api.response.GetRoomsResponse;
+import com.jchat.server.app.service.ChatService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

@@ -1,6 +1,6 @@
-package com.jchat.server.response;
+package com.jchat.server.api.response;
 
-import com.jchat.server.entity.Room;
+import com.jchat.server.db.entity.Room;
 import lombok.Getter;
 import lombok.Setter;
 

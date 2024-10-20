@@ -1,9 +1,8 @@
-package com.jchat.server.entity;
+package com.jchat.server.db.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import org.hibernate.annotations.CollectionIdJavaType;
 
 @Entity
 @Getter
@@ -11,9 +10,8 @@ import org.hibernate.annotations.CollectionIdJavaType;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer user_id;
-
-    String name;
-    String password;
-    String salt;
+    private Long userId;
+    private String name;
+    private String password;
+    private String salt;
 }

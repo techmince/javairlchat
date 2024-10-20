@@ -1,4 +1,4 @@
-package com.jchat.server.request;
+package com.jchat.server.api.request;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,4 +1,4 @@
-package com.jchat.server.enums;
+package com.jchat.server.api.response;
 
 public enum RequestStatus {
     SUCCESS,

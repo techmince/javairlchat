@@ -1,4 +1,4 @@
-package com.jchat.server.entity;
+package com.jchat.server.db.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -12,9 +12,10 @@ import java.time.ZonedDateTime;
 public class Message {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer messageId;
+    Long messageId;
     @ManyToOne(fetch = FetchType.LAZY, targetEntity = Room.class)
-    Integer roomId;
+    @JoinColumn(name = "room_id", foreignKey = @ForeignKey(name = "FK_MESSAGE_ROOM_ID"))
+    Long roomId;
     String message;
     ZonedDateTime timestamp;
 }
