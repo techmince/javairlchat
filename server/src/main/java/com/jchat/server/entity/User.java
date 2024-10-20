@@ -1,16 +1,19 @@
 package com.jchat.server.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.CollectionIdJavaType;
 
 @Entity
+@Getter
+@Setter
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    String Name;
-    String Password;
-    String Salt;
+    Integer user_id;
+
+    String name;
+    String password;
+    String salt;
 }
